@@ -1,0 +1,26 @@
+.product-list{
+    margin-top: 10px;
+}
+.product-list .badge{
+    margin-bottom: 0;
+    background-color: #dddada5c;
+    color: #12b342 ;
+}
+
+.product-list img{
+    border: 1px solid #dcdcdcdc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.product-list small{
+    margin-top: 0;
+    line-height: 15px;
+    display: block;
+}
+.product-list button{
+
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 20px;
+}

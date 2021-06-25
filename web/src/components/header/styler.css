@@ -1,0 +1,20 @@
+.header-global {
+
+  align-items: center;
+}
+
+.cart-button {
+ 
+  max-height: 40px;
+  position: relative;
+  float: right;
+  z-index: 999;
+  margin-top: -70px;
+  margin-right: 20px;
+  color: rgba(6, 214, 160, 0.9);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.cart-button:hover {
+  color: var(--secondary);
+}

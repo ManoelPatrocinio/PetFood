@@ -1,10 +1,10 @@
 import Header from '../../components/header'
-import Logo from "../../assets/logo-white.png";
 import Illustration from "../../assets/illustration.png";
+import './styler.css'
 const Cadastro = () => {
   return (
     <div className="container-fluid h-100 bg-primary">
-      <Header whiteVersion />
+      <Header whiteVersion hideSideBar />
       <div className="row">
         <div className="col-6 text-right my-auto">
           <img src={Illustration} className="img-fluid" />
@@ -41,7 +41,7 @@ const Cadastro = () => {
               placeholder="Data de nascimento"
             />
 
-            <button className="btn btn-lg btn-block btn-secondary">
+            <button className="btn btn-lg w-100 btn-secondary">
               Finalizar Pedido
             </button>
           </div>

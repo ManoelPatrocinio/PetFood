@@ -1,0 +1,31 @@
+.petshop{
+    list-style: none;
+    padding: 7px;
+    margin-right: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    /* flex-direction: row; */
+}
+
+ .petshop-info-container{
+    padding-left: 6px;
+    padding-bottom: 3px;
+ }
+.petshop img{
+    width: 80px;
+    border-radius: 5px;
+    vertical-align: baseline ;
+}
+
+.petshop b{
+    margin-bottom: 0;
+}
+
+.petshop-infos span{
+    vertical-align: middle;
+    color: #626264;
+}
+
+.petshop-infos span.mdi-star{
+    color: #facd5d;
+}

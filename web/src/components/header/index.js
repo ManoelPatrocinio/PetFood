@@ -1,12 +1,27 @@
+import "./styler.css";
 import LogoWhite from "../../assets/logo-white.png";
 import Logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 
-const Header = ({ whiteVersion }) => {
+const Header = ({ whiteVersion, hideSideBar }) => {
+  // evento para abrir a sidebar da sacola de itens,será disparada para toda aplicação
+  const openDrawer = () => {
+    const event = new CustomEvent("openCart");
+    window.dispatchEvent(event);
+  };
   return (
-    <div className="col-12">
+    <div className="col-12 header-global">
       <header className="py-4 px-4 text-center">
-        <img src={whiteVersion ? LogoWhite : Logo} className="img-fluid" />
+        <Link to="/">
+          <img src={whiteVersion ? LogoWhite : Logo} className="img-fluid" />
+        </Link>
       </header>
+
+      {!hideSideBar && (
+        <button onClick={() => openDrawer()} className="btn cart-button">
+          <span className="mdi mdi-cart"></span>(2) Itens
+        </button>
+      )}
     </div>
   );
 };

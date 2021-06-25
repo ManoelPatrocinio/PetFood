@@ -1,0 +1,35 @@
+.product {
+  margin-bottom: 50px;
+}
+
+.product .imgCard {
+  position: relative;
+}
+
+.product img {
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 20px;
+  max-height: 210px;
+  width: 100%;
+}
+
+.product .badge {
+  margin-bottom: 0;
+  background-color: rgba(38, 184, 82, 0.1);
+}
+.product small {
+  margin-top: 0;
+  line-height: 15px;
+  display: block;
+}
+
+.product button {
+  position: absolute;
+  right: 10px;
+  font-size: 25px;
+  padding: 1px 11px;
+  top: 70%;
+  border: none;
+}
