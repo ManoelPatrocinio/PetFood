@@ -1,0 +1,6 @@
+#comandos usados
+
+yarn add express
+yarn add mongoose
+yarn add morgan = logar ou mostrar quais requisições estão chegando em nosso servidor HTTP
+yarn global add nodemon   
