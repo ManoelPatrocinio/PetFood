@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors') ;//controle de acesso
 const morgan = require('morgan'); //controle das requisições
 
-require('./database/database');
+require('./data/database');
 
 app.set('port', process.env.PORT || 8000);
 app.use(cors());
