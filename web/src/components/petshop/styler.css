@@ -4,12 +4,23 @@
     margin-right: 20px;
     border-radius: 5px;
     display: inline-block;
+ 
+    border-bottom:  3px solid transparent;
+    transition: 0.5s;
     /* flex-direction: row; */
+}
+
+.petshop.active, .petshop:hover{
+    cursor: pointer;
+    border-bottom: 3px solid rgba(6, 214, 160, 0.9);
+    transition: 0.5s;
+    background-color: #f6f5f5;
 }
 
  .petshop-info-container{
     padding-left: 6px;
     padding-bottom: 3px;
+    
  }
 .petshop img{
     width: 80px;

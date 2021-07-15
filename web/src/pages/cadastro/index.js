@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux'; //dispara a action p/ a reducer atravez do UI
-import {setCustomer } from '../../store/modules/shop/actions'
+import {setCustomer as setStoreCustomer} from '../../store/modules/shop/actions'
 import Header from '../../components/header'
 import Illustration from "../../assets/illustration.png";
 import './styler.css'
@@ -25,7 +25,7 @@ const Cadastro = () => {
   });
 
   const goToCheckOut = () =>{
-    dispatch(setCustomer(customer));
+    dispatch(setStoreCustomer(customer));
   }
   return (
     <div className="container-fluid h-100 bg-primary">

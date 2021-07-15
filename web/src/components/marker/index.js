@@ -1,18 +1,19 @@
 import './styler.css'
 import MarkerIcon from "../../assets/marker.png";
+import { useSelector } from 'react-redux';
+import {Link} from 'react-router-dom';
 import MarkerIconSelected from "../../assets/marker-selected.png";
 
-const Marker = ()=>{
+const Marker = ({petshop})=>{
+    const { petshopMapSelected } = useSelector((state) => state.shop);
+
     return (
-      <div>
-        <img src={MarkerIcon} />
+      <Link to={`/petshop/${petshop._id}`}>
         <img
-          src={
-            "https://yt3.ggpht.com/a-/AAuE7mBuVBHdqBMjA-Lq0pt9B34XgauL6vFjjlMBeQ=s900-mo-c-c0xffffffff-rj-k-no"
-          }
-          className="img-marker"
+          src={petshopMapSelected === petshop._id ? MarkerIconSelected : MarkerIcon}
         />
-      </div>
+        <img src={petshop.logo} className="img-marker" />
+      </Link>
     );
 }
 

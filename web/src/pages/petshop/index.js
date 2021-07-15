@@ -1,27 +1,34 @@
 import "./styler.css";
-import Header from "../../components/header";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { requestPetshop } from "../../store/modules/shop/actions";
+
 import ProductInCard from "../../components/products/card";
-const Petshop = () => {
+import Header from "../../components/header";
+
+const Petshop = ({ match }) => {
+  const dispatch = useDispatch();
+  const { petshop } = useSelector((state) => state.shop);
+
+  useEffect(() => {
+    dispatch(requestPetshop(match.params.id));
+  }, []);
+
   return (
     <div className="h-100">
       <Header />
       <div className="container">
         <div className="row">
           <div className="col-2">
-            <img
-              src={
-                "https://yt3.ggpht.com/a-/AAuE7mBuVBHdqBMjA-Lq0pt9B34XgauL6vFjjlMBeQ=s900-mo-c-c0xffffffff-rj-k-no"
-              }
-              className="img-fluid petshop-image"
-            />
-            <b>PetLove</b>
+            <img src={petshop.logo} className="img-fluid petshop-image" />
+            <b>{petshop.nome}</b>
             <div className="petshop-infos">
               <span className="mdi mdi-star"></span>
               <text>
                 <b>2,8</b>
               </text>
               <span className="mdi mdi-cash-usd-outline"></span>
-              <text>$$$</text>
+              <text>{petshop.categoria}</text>
               <span className="mdi mdi-crosshairs-gps"></span>
               <text>2,9Km</text>
             </div>
@@ -31,10 +38,9 @@ const Petshop = () => {
             <h5>Produtos</h5>
             <br />
             <div className="row">
-              {[1, 2, 3, 4, 5, 6].map((p) => (
-                <ProductInCard />
+              {petshop.products?.map((p) => (
+                <ProductInCard product={p} />
               ))}
-             
             </div>
           </div>
         </div>
