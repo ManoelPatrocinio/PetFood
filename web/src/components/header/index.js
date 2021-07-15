@@ -2,8 +2,11 @@ import "./styler.css";
 import LogoWhite from "../../assets/logo-white.png";
 import Logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Header = ({ whiteVersion, hideSideBar }) => {
+    const { cart } = useSelector((state) => state.shop);
+
   // evento para abrir a sidebar da sacola de itens,será disparada para toda aplicação
   const openDrawer = () => {
     const event = new CustomEvent("openCart");
@@ -19,7 +22,7 @@ const Header = ({ whiteVersion, hideSideBar }) => {
 
       {!hideSideBar && (
         <button onClick={() => openDrawer()} className="btn cart-button">
-          <span className="mdi mdi-cart"></span>(2) Itens
+          <span className="mdi mdi-cart"></span>({cart.length}) Itens
         </button>
       )}
     </div>

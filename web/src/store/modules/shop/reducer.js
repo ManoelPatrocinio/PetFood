@@ -46,7 +46,7 @@ function shop(state = INITTIAL_STATE, action) {
     }
     case types.TOGGLE_CART_PRODUCT: {
       return produce(state, (draft) => {
-        const index = draft.findIndex((p) => p._id === action.product._id) //verifica de o item já existe
+        const index = draft.cart.findIndex((p) => p._id === action.product._id) //verifica de o item já existe
         if(index != -1){
           draft.cart.splice(index,1) //se exitir remove
         }else{

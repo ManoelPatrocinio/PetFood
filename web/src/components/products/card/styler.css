@@ -33,3 +33,7 @@
   top: 70%;
   border: none;
 }
+
+.product button.btn-secondary{
+  padding: 1px 14px;
+}
