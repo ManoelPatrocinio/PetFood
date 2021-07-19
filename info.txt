@@ -6,3 +6,6 @@ yarn add morgan = logar ou mostrar quais requisições estão chegando em nosso 
 yarn global add nodemon   
 yarn add redux-saga => middleware p/ realizar funções async
 yarn add dotenv => p/ o node poder ler o .env
+yarn add dayjs
+yarn add underscore
+yarn add sweetalert2

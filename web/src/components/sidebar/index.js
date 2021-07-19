@@ -3,9 +3,14 @@ import Dock from "react-dock";
 import { useState, useEffect } from "react";
 import ProductInList from "../products/list";
 import { useSelector } from "react-redux";
+import {useHistory} from 'react-router-dom';
+
 
 const Sidebar = () => {
+   
+  const history = useHistory();
   const {cart} = useSelector((state)=> state.shop)
+
   const total = cart.reduce((total,product)=>{//percorre cada item do carrinho para somar o total
       return total += product.preco
   },0)
@@ -38,7 +43,7 @@ const Sidebar = () => {
             <b className="d-inline-block">Total</b>
             <h3 className="d-inline-block">R$ {total.toFixed(2)}</h3>
           </div>
-          <button className="btn btn-lg btn-primary rounded-0 ">
+          <button onClick={()=> history.push('/cadastro')} className="btn btn-lg btn-primary rounded-0 ">
             Finalizar Compra
           </button>
         </div>

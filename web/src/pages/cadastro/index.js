@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'; //dispara a action p/ a reducer atrav
 import {setCustomer as setStoreCustomer} from '../../store/modules/shop/actions'
 import Header from '../../components/header'
 import Illustration from "../../assets/illustration.png";
+import { Link } from 'react-router-dom';
 import './styler.css'
 
 
@@ -89,9 +90,9 @@ const Cadastro = () => {
               }}
             />
 
-            <button onClick={()=> goToCheckOut()} className="btn btn-lg w-100 btn-secondary">
-              Finalizar Pedido
-            </button>
+            <Link to="/checkout" onClick={()=> goToCheckOut()} className="btn btn-lg w-100 btn-secondary">
+              Finalizar Cadastro
+            </Link>
           </div>
         </div>
       </div>
