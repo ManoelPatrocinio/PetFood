@@ -16,7 +16,7 @@ const Header = ({ whiteVersion, hideSideBar }) => {
     <div className="col-12 header-global">
       <header className="py-4 px-4 text-center">
         <Link to="/">
-          <img src={whiteVersion ? LogoWhite : Logo} className="img-fluid" />
+          <img src={whiteVersion ? LogoWhite : Logo} className="img-fluid" alt="petfood"/>
         </Link>
       </header>
 

@@ -29,7 +29,7 @@ export function* makePurchase() {
     });
     return false;
   }
-  if (res.data.status != "paid") {
+  if (res.data.status !== "paid") {
     Swal.fire({
       icon: "error",
       title: "Oopsss",

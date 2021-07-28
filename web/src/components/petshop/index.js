@@ -22,7 +22,7 @@ const Petshop = ({ petshop }) => {
       onClick={() => setSelectedPetshop()}
     >
       <div className="d-inline-block">
-        <img src={petshop.logo} className="img-fluid" />
+        <img src={petshop.logo} className="img-fluid" alt="petfood" />
       </div>
       <div className="d-inline-block petshop-info-container">
         <b>{petshop.nome}</b>

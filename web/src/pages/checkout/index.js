@@ -56,10 +56,10 @@ const Checkout = () => {
     });
   };
   // falta implementar validação, cep nº da cartão etc;
-  const makePurchase = () => {
+  const makePuchase = () => {
    dispatch(setStoreTransaction(transaction));
    setTimeout(()=>{
-    dispatch(makePurchase())
+    dispatch(makePurchase());
    },100)
   };
 
@@ -259,7 +259,7 @@ const Checkout = () => {
               </div>
               <div className="col-12">
                 <button
-                  onClick={() => makePurchase()}
+                  onClick={() => makePuchase()}
                   className=" btn w-100 btn-lg btn-primary"
                 >
                   {" "}

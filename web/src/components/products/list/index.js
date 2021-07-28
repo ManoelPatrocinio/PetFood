@@ -9,7 +9,7 @@ const ProductInList = ({ product }) => {
     <div className="product-list col-12">
       <div className="row">
         <div className="col-3">
-          <img src={product.capa} className="img-fluid" />
+          <img src={product.capa} className="img-fluid" alt="ração" />
         </div>
         <div className="col-6">
           <h6>

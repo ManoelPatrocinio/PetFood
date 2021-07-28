@@ -20,7 +20,11 @@ const Petshop = ({ match }) => {
       <div className="container">
         <div className="row">
           <div className="col-2">
-            <img src={petshop.logo} className="img-fluid petshop-image" />
+            <img
+              src={petshop.logo}
+              className="img-fluid petshop-image"
+              alt="petshop"
+            />
             <b>{petshop.nome}</b>
             <div className="petshop-infos">
               <span className="mdi mdi-star"></span>

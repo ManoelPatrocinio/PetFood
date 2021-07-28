@@ -33,7 +33,7 @@ const Cadastro = () => {
       <Header whiteVersion hideSideBar />
       <div className="row">
         <div className="col-6 text-right my-auto">
-          <img src={Illustration} className="img-fluid" />
+          <img src={Illustration} className="img-fluid" alt="petfood" />
         </div>
         <div className="col-6">
           <div className="box col-8">
@@ -90,7 +90,11 @@ const Cadastro = () => {
               }}
             />
 
-            <Link to="/checkout" onClick={()=> goToCheckOut()} className="btn btn-lg w-100 btn-secondary">
+            <Link
+              to="/checkout"
+              onClick={() => goToCheckOut()}
+              className="btn btn-lg w-100 btn-secondary"
+            >
               Finalizar Cadastro
             </Link>
           </div>
