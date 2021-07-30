@@ -11,22 +11,32 @@ const ProductInCard = ({ product }) => {
   return (
     <div className="product col-3">
       <div className="imgCard">
-        <img src={product.capa} className="img-fluid align-center" alt="ração" />
+        <img
+          src={product.capa}
+          className="img-fluid align-center"
+          alt="ração"
+        />
+      </div>
+      <div className="prod_info">
+        <h4>
+          <label className="badge badge-primary">
+            R$ {product.preco.toFixed(2)}
+          </label>
+        </h4>
+
+        <small>
+          <b>{product.nome}</b>
+        </small>
+      </div>
+
+      <div className="btnFooter">
         <button
           onClick={() => dispatch(toggleCartProduct(product))}
-          className={`btn btn-${added ? 'secondary' :'primary'} rounded-circle`}
+          className={`btn btn-${added ? "secondary" : "primary"} `}
         >
-          { added ? '-' : '+'}
+          {added ? "Remover" : <span className="mdi mdi-cart">Adicionar</span>}
         </button>
       </div>
-      <h4>
-        <label className="badge badge-primary">
-          R$ {product.preco.toFixed(2)}
-        </label>
-      </h4>
-      <small>
-        <b>{product.nome}</b>
-      </small>
     </div>
   );
 };;

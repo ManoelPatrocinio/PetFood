@@ -25,7 +25,8 @@ export function* makePurchase() {
     Swal.fire({
       icon: "error",
       title: "Oopsss",
-      text: res.message,
+      text:"Serviço em manutenção, tente mais tarde"
+      // text: res.message,
     });
     return false;
   }

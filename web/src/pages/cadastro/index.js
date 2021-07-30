@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux'; //dispara a action p/ a reducer atravez do UI
 import {setCustomer as setStoreCustomer} from '../../store/modules/shop/actions'
 import Header from '../../components/header'
-import Illustration from "../../assets/illustration.png";
+import Illustration from "../../assets/logo1.jpg";
 import { Link } from 'react-router-dom';
 import './styler.css'
 
@@ -29,21 +29,28 @@ const Cadastro = () => {
     dispatch(setStoreCustomer(customer));
   }
   return (
-    <div className="container-fluid h-100 bg-primary">
-      <Header whiteVersion hideSideBar />
-      <div className="row">
-        <div className="col-6 text-right my-auto">
-          <img src={Illustration} className="img-fluid" alt="petfood" />
-        </div>
-        <div className="col-6">
+    <div className="container-fluid  cadastro_body">
+       <img src={Illustration}  id="cadastro_img_bg" alt="racões e brinquedos pet"/>
+
+      <div className="header">
+        <Header whiteVersion hideSideBar/>
+      </div> 
+
+      <div className="row cadastro_container">
+      
+        <div className="col-6 cadastro_box">
           <div className="box col-8">
-            <h2 className="text-center">Falta pouco para fazer o seu pedido</h2>
+            <header className="boxHeader">
+              <h2 className="text-center">Cadastre-se</h2>
+              <small>E acompanhe seu pedido</small>
+            </header>
             <br />
             <br />
             <input
               type="text"
               className="form-control form-control-lg mb-3"
               placeholder="Nome Completo"
+              required
               onChange={(e) => {
                 setCustomer({ ...customer, name: e.target.value }); //pega tudo de custumer e atualiza apenas o Name
               }}
@@ -52,6 +59,7 @@ const Cadastro = () => {
               type="email"
               className="form-control form-control-lg mb-3"
               placeholder="E-mail"
+              required
               onChange={(e) => {
                 setCustomer({ ...customer, email: e.target.value }); //pega tudo de custumer e atualiza apenas o Name
               }}
@@ -60,6 +68,7 @@ const Cadastro = () => {
               type="text"
               className="form-control form-control-lg mb-3"
               placeholder="Telefone"
+              required
               onChange={(e) => {
                 setCustomer({ ...customer, phone_numbers: [e.target.value] }); //pega tudo de custumer e atualiza apenas o
               }}
@@ -69,6 +78,7 @@ const Cadastro = () => {
               type="text"
               className="form-control form-control-lg mb-3"
               placeholder="CPF"
+              required
               onChange={(e) => {
                 setCustomer({
                   ...customer,
@@ -85,11 +95,12 @@ const Cadastro = () => {
               type="date"
               className="form-control form-control-lg mb-3"
               placeholder="Data de nascimento"
+              required
               onChange={(e) => {
                 setCustomer({ ...customer, birthday: e.target.value }); //pega tudo de custumer e atualiza apenas o
               }}
             />
-
+            
             <Link
               to="/checkout"
               onClick={() => goToCheckOut()}

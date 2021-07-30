@@ -18,8 +18,8 @@ const Petshop = ({ match }) => {
     <div className="h-100">
       <Header />
       <div className="container">
-        <div className="row">
-          <div className="col-2">
+        <div className="row ">
+          <div className="col-2 petshopDestaque">
             <img
               src={petshop.logo}
               className="img-fluid petshop-image"

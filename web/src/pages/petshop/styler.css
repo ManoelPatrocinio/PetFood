@@ -1,3 +1,10 @@
+
+.petshopDestaque{
+    cursor: pointer; 
+    background-color: #f6f5f5;
+    height: 19rem;
+    max-height: 20rem;
+}
 .petshop-infos{
     vertical-align: middle;
     color: #626264;
