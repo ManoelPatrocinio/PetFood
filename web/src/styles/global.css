@@ -4,6 +4,7 @@
 :root{
     --primary:#06d6a0;
     --secondary:#FA643D;
+    --background_dark: rgba(0,0,0,.8)
 }
 
 html,
@@ -12,6 +13,7 @@ body{
     overflow-x: hidden;
     font-family: 'Open Sans';
     letter-spacing: 0;
+    font-size: 1rem;
 }
 
 .btn-secondary{

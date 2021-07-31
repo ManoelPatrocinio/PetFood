@@ -1,9 +1,14 @@
+html,
+body{
+  font-size: 1rem;
+}
 .cadastro_body {
+  position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   min-height: 100vh;
   padding: 0;
-  /* overflow:hidden; */
+  overflow:hidden;
   background-color: rgba(0, 0, 0, 1);
 }
 
@@ -16,7 +21,7 @@
   top: 0;
 }
 
-#cadastro_img_bg{
+#cadastro_img_bg {
   height: 100%;
   width: 100%;
   opacity: 0.6;
@@ -27,30 +32,44 @@
   height: 85%;
   width: 100vw;
   top: 15%;
- left: 1%;
+  left: 1%;
   justify-content: flex-end;
   align-items: center;
 }
 
-
 .cadastro_box {
-  position: absolute;
+  /* position: absolute; */
+  margin-bottom: 1rem;
 }
-.box{
-    background: transparent;
-    box-shadow: none;
+.box {
+  background: transparent;
+  box-shadow: none;
 }
 .boxHeader {
   text-align: center;
+    height: 5rem;
+    max-height: 5rem;
 }
 
 .boxHeader h2 {
+  width: 100%;
   margin-bottom: 0;
   font-size: 3rem;
   color: #fff;
 }
 .boxHeader small {
+  width: 100%;
   font-weight: 600;
   color: #fff;
   font-size: 1rem;
+}
+
+.alertCadInput {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ebef06;
+}
+
+button{
+  margin-top: 1rem;
 }
