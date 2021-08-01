@@ -8,7 +8,7 @@
 # Petfood
  MarketPlace para petshops anunciarem e venderem seus produtos, com integração  a API do pagar.me para gerenciar e efetuar o pagamento,  desenvolvido durante o evento Fullstack Week do canal Irmão mais velho de [Silvo Luis Sampaio ](https://www.youtube.com/channel/UC5cfBZHUQpcMvBJDBaX8-jg/featured).
 
-[Confira o projeto](https://portifoliomanoel.herokuapp.com/#)
+[Confira o projeto](https://petshop-fontend.herokuapp.com/)
 
 ## Ícones
 :package: nova funcionalidade
