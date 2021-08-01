@@ -28,8 +28,10 @@
 ## Melhorias
 
   Foram aplicadas melhorias como:
+  
+  * Validações
   * Otimização do tempo de carregamento da página. 
-  * Layoutcom implementação dos conceitos de UX design.
+  * Layout com implementação dos conceitos de UX design.
 
 ### Pré-requisitos
 

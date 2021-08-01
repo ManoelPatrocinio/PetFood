@@ -10,4 +10,5 @@ yarn add dayjs
 yarn add underscore
 yarn add sweetalert2
 yarn add react-hook-form => biblioteca para validação de form
-yarn add @hookform/error-message => exibe mensagens de erro dos forma
+yarn add @hookform/error-message => exibe mensagens de erro dos forme
+yarn add react-scripts

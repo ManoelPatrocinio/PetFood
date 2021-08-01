@@ -14,5 +14,5 @@ app.use(express.json());
 app.use("/", require("./routes/routes"));
 
 app.listen(app.get("port"), () => {
-  console.log("server running on port 8000");
+  console.log("api up");
 });
