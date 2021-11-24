@@ -10,6 +10,8 @@
 
 [Confira o projeto](https://petshop-fontend.herokuapp.com/)
 
+[Confira o protótipo da versão final do projeto](https://www.figma.com/file/Js7in6EaEfs0BjF9xBnrr4/MyPetfood?node-id=248%3A9)
+
 ## Ícones
 :package: nova funcionalidade
 :up: atualização
@@ -51,12 +53,7 @@ $ cd PetFood
 # Instale as dependências
 
 $ npm install --global yarn
-$ yarn init -Y                             
-$ yarn add express                         
-$ yarn add @types/express -D               
-$ yarn add nodemailer                     
-$ yarn add nodemon -D 
-$ yarn add dotenv
+
 
 # As demais dependencias e tecnologias usadas estão no arquivo "info.txt"
 
