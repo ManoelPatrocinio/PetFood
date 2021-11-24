@@ -6,7 +6,7 @@
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/ManoelPatrocinio/portifolio/blob/main/LICENSE) 
 
 # Petfood
- MarketPlace para petshops anunciarem e venderem seus produtos, com integração  a API do pagar.me para gerenciar e efetuar o pagamento,  desenvolvido durante o evento Fullstack Week do canal Irmão mais velho de [Silvo Luis Sampaio ](https://www.youtube.com/channel/UC5cfBZHUQpcMvBJDBaX8-jg/featured).
+ MarketPlace para petshops anunciarem e venderem seus produtos, com integração  a API do pagar.me para gerenciar e efetuar o pagamento,  desenvolvido seguindo a  playlist presente no canal Irmão mais velho de [Silvio Luis Sampaio ](https://www.youtube.com/channel/UC5cfBZHUQpcMvBJDBaX8-jg/featured).
 
 [Confira o projeto](https://petshop-fontend.herokuapp.com/)
 
